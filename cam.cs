@@ -21,7 +21,7 @@ public class cam : MonoBehaviour
         float v = Input.GetAxis("Mouse Y");
 
         mx += rotSpeed * h * Time.deltaTime;
-        my += rotSpeed * -v * Time.deltaTime;
+        my += rotSpeed * v * Time.deltaTime;
         if (my >= 90)
         {
             my = 90;
